@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="UTF-8">
+	<meta name="author"content="Akmol">
+	<link rel="stylesheet"type="text/css" href="form.css">
+	
+	<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+</head>	
+<body>
+<h2> Fill in the required fields. </h2>
+<p>The form will be used for a national Astronomy Club!</p>
+
+​<form name= "myForm" action="mailto:someone@example.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+
+
+
+First Name:<br>
+<input type="text" name="fname"><br>
+Surname:<br>
+<input type="text" Surname="fSurname"><br>
+Address:<br>
+<input type="text" address="faddress" size="50"><br><br>
+<input type="text" address="address" size="50"><br>
+Post code:<br>
+<input type="text" Postcode="fPostcode"><br>
+E-mail:<br>
+<input type="text" name="fmail"><br>
+Country *<br>
+
+
+
+
+<select>
+<option value=""></option>
+<option value="England"> England</option>
+<option value="Wales">Wales</option>
+<option value="Scotland">Scotland</option>
+<option value="Northern Ireland">Northern Ireland</option><br><br>
+
+</select>
+<br><br>
+Comment:<br>
+<textarea name="message" rows="5"cols="40">The form will be used for a national Astronomy Club!</textarea>
+<br>
+<br>
+<p>Please answer the question below:<br><br> Which of major planets have you seen through a telescope?</p>
+<input type="checkbox" name="Planets" value="Science"> Mercury<br>
+<input type="checkbox" name="Planets" value="Science">Venus <br>
+<input type="checkbox" name="Planets" value="Science"> Mars<br>
+<input type="checkbox" name="Planets" value="Science"> Jupiter<br>
+<input type="checkbox" name="Planets" value="Science"> Saturn<br>
+<input type="checkbox" name="Planets" value="Science"> Uranus<br>
+<input type="checkbox" name="Planets" value="Science"> Neptune<br>
+<input type="checkbox" name="Planets" value="Science"> None<br><br>
+
+<input type="radio" name="age" value="Under 18"> Under 18<br>
+<input type="radio" name="age" value="Adult"> Adult<br>
+<input type="radio" name="age" value="Senior>65"> Senior > 65<br>
+<input type="radio" name="age" value="Over 18"> Over 18<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
